@@ -145,15 +145,6 @@
     transform: rotateY(-180deg); /* Adjust as needed */
 }
 
-/* Media query for Galaxy A8 and similar devices */
-@media only screen and (max-width: 768px) {
-    .card {
-        width: 100%; /* Adjust to fit the screen */
-        height: auto; /* Adjust height accordingly */
-        /* Additional styling adjustments for mobile */
-    }
-}
-
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
