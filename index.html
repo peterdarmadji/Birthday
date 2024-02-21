@@ -92,6 +92,10 @@
                 confettiWrapper.style.display = 'none';
             }, 3000); // Match the duration of the animation
         });
+
+        document.querySelector('.card').addEventListener('click', function() {
+            this.classList.toggle('is-open'); // Add this class toggle functionality
+        });
     </script>
   </body>
 </html>

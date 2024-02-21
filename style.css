@@ -20,12 +20,12 @@
     perspective: 1200px;
     transition: 1s;
   }
-  .card:hover {
+  /* .card:hover {
     transform: rotate(-5deg);
   }
   .card:hover .outside {
     transform: rotateY(-130deg);
-  }
+  } */
   .outside,
   .inside {
     height: 100%;
@@ -139,6 +139,20 @@
     font-size: 120px;
     line-height: 120px;
   }
+
+/* New class for toggling the card open state */
+.is-open .outside {
+    transform: rotateY(-180deg); /* Adjust as needed */
+}
+
+/* Media query for Galaxy A8 and similar devices */
+@media only screen and (max-width: 768px) {
+    .card {
+        width: 100%; /* Adjust to fit the screen */
+        height: auto; /* Adjust height accordingly */
+        /* Additional styling adjustments for mobile */
+    }
+}
 
 /* The Modal (background) */
 .modal {
